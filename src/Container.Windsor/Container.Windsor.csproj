@@ -4,15 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1C1D7892-08C8-46A6-A022-91E0D19CF569}</ProjectGuid>
+    <ProjectGuid>{2BC4EA02-F00F-4DAE-96FC-FAD46E5377CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Identifiers.Windsor</RootNamespace>
-    <AssemblyName>Identifiers.Windsor</AssemblyName>
+    <RootNamespace>Container.Windsor</RootNamespace>
+    <AssemblyName>Container.Windsor</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -52,23 +50,13 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributeExtensions.cs" />
-    <Compile Include="Extension.cs" />
-    <Compile Include="Filter.cs" />
+    <Compile Include="SetupWindsor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Identifiers\Identifiers.csproj">
-      <Project>{5f873342-d9a3-49ad-9398-3391350c124a}</Project>
-      <Name>Identifiers</Name>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="manifest.xml">
